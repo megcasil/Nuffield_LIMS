@@ -96,6 +96,100 @@ Function-based views were implemented to handle sample creation, sample details,
 
 ## Installation and Setup
 
-Install virtual environment.
-Install all packages "pip install -r requirements.txt".
-Run "python manage.py migrate".
+### Prerequisites
+
+- Python 3.11
+- pip (Python package installer)
+- Git (optional, if cloning the repository rather than downloading the ZIP)
+
+### Setup Instructions
+
+1. Download the project using **Code → Download ZIP** on GitHub and extract the files, or clone the repository using Git.
+2. Open a terminal in the main project folder.
+3. Create a Python virtual environment using Python 3.11:
+
+```powershell
+py -3.11 -m venv .venv
+```
+
+4. Activate the virtual environment (Windows PowerShell):
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+5. Install the project dependencies:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+6. Navigate into the Django project directory:
+
+```powershell
+cd mysite
+```
+
+7. Apply database migrations:
+
+```powershell
+python manage.py migrate
+```
+
+8. Start the development server:
+
+```powershell
+python manage.py runserver
+```
+
+9. Open the application in your browser:
+
+**http://127.0.0.1:8000/LIMS/**
+
+## Accessing the Django Admin
+
+The Django administration interface provides access to the management of QC and sequencing records.
+
+To create an administrator account, run the following command from the `mysite` directory:
+
+```powershell
+python manage.py createsuperuser
+```
+
+Follow the prompts to create your username and password.
+
+Once the development server is running, visit:
+
+**http://127.0.0.1:8000/admin/**
+
+## Current Limitations
+
+- User authentication and role-based access have not yet been implemented for the main application.
+- QC and sequencing records can currently only be created through the Django admin interface.
+- The application uses SQLite and was developed as a small-scale research project rather than a production laboratory system.
+- Custom automated tests have not yet been implemented.
+
+## Future Improvements
+
+The following improvements were identified during development:
+
+- **User authentication:** Introduce login functionality and role-based access to protect sensitive laboratory information.
+- **QC and sequencing forms:** Develop dedicated user-facing forms for entering quality control and sequencing data.
+- **Automated testing:** Introduce custom automated tests to improve reliability and identify errors during development.
+- **Bulk data import:** Enable importing large datasets from Excel spreadsheets to reduce manual data entry.
+- **Improved code organisation:** Explore class-based views to improve code reusability and maintainability.
+- **Extended taxonomic metadata:** Retrieve additional information, such as taxonomic rank and division, using taxon IDs.
+- **External integrations:** Explore synchronisation with other laboratory systems to improve data exchange.
+
+## Research Documentation
+
+The following documents provide further information about the research, development process and project outcomes.
+
+- **[Research Report](docs/LIMS_Research_Report.pdf):** Detailed documentation of the project objectives, methodology, implementation, database design and conclusions.
+- **[Research Poster](docs/LIMS_Research_Poster.pdf):** A visual summary of the project's aims, development and key outcomes.
+
+## Acknowledgements
+
+This project was developed as part of a Nuffield Research Placement at the Earlham Institute.
+
+The placement provided an opportunity to explore web application development, database design and the application of software engineering to biological data management.
