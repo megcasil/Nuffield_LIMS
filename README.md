@@ -1,6 +1,26 @@
-# Nuffield LIMS – Laboratory Information Management System
+# LIMS – Laboratory Information Management System
 
 A web-based Laboratory Information Management System developed using Python and Django to manage biological samples and track their progression through DNA extraction, quality control and sequencing.
+
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Key Features](#key-features)
+   - [Sample Management](#sample-management)
+   - [DNA Extraction Tracking](#dna-extraction-tracking)
+   - [Quality Control and Sequencing](#quality-control-and-sequencing)
+   - [Automated Taxonomic Information Retrieval](#automated-taxonomic-information-retrieval)
+   - [User Interface](#user-interface)
+3. [Technologies Used](#technologies-used)
+4. [Database Design](#database-design)
+5. [Application Architecture](#application-architecture)
+6. [Screenshots](#screenshots)
+7. [Installation and Setup](#installation-and-setup)
+8. [Accessing the Django Admin](#accessing-the-django-admin)
+9. [Current Limitations](#current-limitations)
+10. [Future Improvements](#future-improvements)
+11. [Research Documentation](#research-documentation)
+12. [Acknowledgements](#acknowledgements)
 
 ## Project Overview
 
