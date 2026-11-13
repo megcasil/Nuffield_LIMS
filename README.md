@@ -86,6 +86,16 @@ The application follows Django's Model-View-Template (MVT) architecture:
 
 Function-based views were implemented to handle sample creation, sample details, extraction creation and extraction details.
 
+## Screenshots
+<img width="944" height="272" alt="image" src="https://github.com/user-attachments/assets/d28741b3-b6e4-4fc1-8b5f-dd0c646b1b18" />
+<img width="946" height="412" alt="image" src="https://github.com/user-attachments/assets/d5ac8a08-89c1-4a60-97d0-3af210921f3f" />
+<img width="944" height="406" alt="image" src="https://github.com/user-attachments/assets/0da2900a-9f8c-4129-8d81-e323bb5168f2" />
+<img width="944" height="437" alt="image" src="https://github.com/user-attachments/assets/b53fbe0c-7c72-4432-b879-51377ef13e03" />
+<img width="956" height="437" alt="image" src="https://github.com/user-attachments/assets/46eea729-aa1d-4e82-a42a-d3ce2de056c2" />
+<img width="944" height="431" alt="image" src="https://github.com/user-attachments/assets/554da762-26de-43da-9488-d487e82c4313" />
+
+## Installation and Setup
+
 Install virtual environment.
 Install all packages "pip install -r requirements.txt".
 Run "python manage.py migrate".
